@@ -1,3 +1,7 @@
+function isSafari() {
+	return navigator.userAgent.indexOf("Safari") != -1;
+}
+
 // Set setting toggle values on-load:
 extensionAPI.storage.local.get({ 'power': 'on' }, (item) => {
   setPower(item.power, false);
@@ -380,4 +384,8 @@ async function loadBreezewikiOptions() {
       extensionAPI.storage.sync.set({ 'breezewikiHost': host });
     }
   });
+}
+
+if (isSafari()) {
+  document.getElementById('desktopNotificationToggle').remove();
 }

@@ -1,0 +1,994 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A86159C2B53723A00FBDBF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A86159B2B53723A00FBDBF0 /* AppDelegate.swift */; };
+		4A86159E2B53723A00FBDBF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A86159D2B53723A00FBDBF0 /* SceneDelegate.swift */; };
+		4A8615A12B53723A00FBDBF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A86159F2B53723A00FBDBF0 /* LaunchScreen.storyboard */; };
+		4A8615A42B53723A00FBDBF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A8615A22B53723A00FBDBF0 /* Main.storyboard */; };
+		4A8615AD2B53723A00FBDBF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8615AC2B53723A00FBDBF0 /* AppDelegate.swift */; };
+		4A8615B02B53723A00FBDBF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A8615AE2B53723A00FBDBF0 /* Main.storyboard */; };
+		4A8615B82B53723B00FBDBF0 /* Indie Wiki Buddy Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4A8615B72B53723B00FBDBF0 /* Indie Wiki Buddy Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4A8615C22B53723B00FBDBF0 /* Indie Wiki Buddy Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4A8615C12B53723B00FBDBF0 /* Indie Wiki Buddy Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4A8615C82B53723B00FBDBF0 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 4A86158B2B53723A00FBDBF0 /* Main.html */; };
+		4A8615C92B53723B00FBDBF0 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 4A86158B2B53723A00FBDBF0 /* Main.html */; };
+		4A8615CA2B53723B00FBDBF0 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A86158D2B53723A00FBDBF0 /* Icon.png */; };
+		4A8615CB2B53723B00FBDBF0 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A86158D2B53723A00FBDBF0 /* Icon.png */; };
+		4A8615CC2B53723B00FBDBF0 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 4A86158E2B53723A00FBDBF0 /* Style.css */; };
+		4A8615CD2B53723B00FBDBF0 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 4A86158E2B53723A00FBDBF0 /* Style.css */; };
+		4A8615CE2B53723B00FBDBF0 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 4A86158F2B53723A00FBDBF0 /* Script.js */; };
+		4A8615CF2B53723B00FBDBF0 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 4A86158F2B53723A00FBDBF0 /* Script.js */; };
+		4A8615D02B53723B00FBDBF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8615902B53723A00FBDBF0 /* ViewController.swift */; };
+		4A8615D12B53723B00FBDBF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8615902B53723A00FBDBF0 /* ViewController.swift */; };
+		4A8615D22B53723B00FBDBF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A8615912B53723A00FBDBF0 /* Assets.xcassets */; };
+		4A8615D32B53723B00FBDBF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A8615912B53723A00FBDBF0 /* Assets.xcassets */; };
+		4A8615D42B53723B00FBDBF0 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8615932B53723A00FBDBF0 /* SafariWebExtensionHandler.swift */; };
+		4A8615D52B53723B00FBDBF0 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8615932B53723A00FBDBF0 /* SafariWebExtensionHandler.swift */; };
+		4A8615F32B53723B00FBDBF0 /* manifest-firefox.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A8615E72B53723B00FBDBF0 /* manifest-firefox.json */; };
+		4A8615F42B53723B00FBDBF0 /* favicons in Resources */ = {isa = PBXBuildFile; fileRef = 4A8615E82B53723B00FBDBF0 /* favicons */; };
+		4A8615F52B53723B00FBDBF0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4A8615E92B53723B00FBDBF0 /* LICENSE */; };
+		4A8615F62B53723B00FBDBF0 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 4A8615EA2B53723B00FBDBF0 /* background.js */; };
+		4A8615F72B53723B00FBDBF0 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 4A8615EB2B53723B00FBDBF0 /* images */; };
+		4A8615F82B53723B00FBDBF0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4A8615EC2B53723B00FBDBF0 /* README.md */; };
+		4A8615FA2B53723B00FBDBF0 /* scripts in Resources */ = {isa = PBXBuildFile; fileRef = 4A8615EE2B53723B00FBDBF0 /* scripts */; };
+		4A8615FB2B53723B00FBDBF0 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A8615EF2B53723B00FBDBF0 /* manifest.json */; };
+		4A8615FD2B53723B00FBDBF0 /* data in Resources */ = {isa = PBXBuildFile; fileRef = 4A8615F12B53723B00FBDBF0 /* data */; };
+		4A8615FE2B53723B00FBDBF0 /* pages in Resources */ = {isa = PBXBuildFile; fileRef = 4A8615F22B53723B00FBDBF0 /* pages */; };
+		4A8615FF2B53723B00FBDBF0 /* manifest-firefox.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A8615E72B53723B00FBDBF0 /* manifest-firefox.json */; };
+		4A8616002B53723B00FBDBF0 /* favicons in Resources */ = {isa = PBXBuildFile; fileRef = 4A8615E82B53723B00FBDBF0 /* favicons */; };
+		4A8616012B53723B00FBDBF0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4A8615E92B53723B00FBDBF0 /* LICENSE */; };
+		4A8616022B53723B00FBDBF0 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 4A8615EA2B53723B00FBDBF0 /* background.js */; };
+		4A8616032B53723B00FBDBF0 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 4A8615EB2B53723B00FBDBF0 /* images */; };
+		4A8616042B53723B00FBDBF0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4A8615EC2B53723B00FBDBF0 /* README.md */; };
+		4A8616062B53723B00FBDBF0 /* scripts in Resources */ = {isa = PBXBuildFile; fileRef = 4A8615EE2B53723B00FBDBF0 /* scripts */; };
+		4A8616072B53723B00FBDBF0 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A8615EF2B53723B00FBDBF0 /* manifest.json */; };
+		4A8616092B53723B00FBDBF0 /* data in Resources */ = {isa = PBXBuildFile; fileRef = 4A8615F12B53723B00FBDBF0 /* data */; };
+		4A86160A2B53723B00FBDBF0 /* pages in Resources */ = {isa = PBXBuildFile; fileRef = 4A8615F22B53723B00FBDBF0 /* pages */; };
+		4AA823022BF41E4300A8D48C /* css in Resources */ = {isa = PBXBuildFile; fileRef = 4AA823012BF41E4300A8D48C /* css */; };
+		4AA823032BF41E4300A8D48C /* css in Resources */ = {isa = PBXBuildFile; fileRef = 4AA823012BF41E4300A8D48C /* css */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A8615B92B53723B00FBDBF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A8615852B53723900FBDBF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A8615B62B53723B00FBDBF0;
+			remoteInfo = "Indie Wiki Buddy Extension (iOS)";
+		};
+		4A8615C32B53723B00FBDBF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A8615852B53723900FBDBF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A8615C02B53723B00FBDBF0;
+			remoteInfo = "Indie Wiki Buddy Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4A8615DB2B53723B00FBDBF0 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4A8615B82B53723B00FBDBF0 /* Indie Wiki Buddy Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A8615E22B53723B00FBDBF0 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4A8615C22B53723B00FBDBF0 /* Indie Wiki Buddy Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4A86158C2B53723A00FBDBF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		4A86158D2B53723A00FBDBF0 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		4A86158E2B53723A00FBDBF0 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		4A86158F2B53723A00FBDBF0 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		4A8615902B53723A00FBDBF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A8615912B53723A00FBDBF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A8615932B53723A00FBDBF0 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		4A8615982B53723A00FBDBF0 /* Indie Wiki Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Indie Wiki Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A86159B2B53723A00FBDBF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A86159D2B53723A00FBDBF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4A8615A02B53723A00FBDBF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4A8615A32B53723A00FBDBF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A8615A52B53723A00FBDBF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A8615AA2B53723A00FBDBF0 /* Indie Wiki Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Indie Wiki Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A8615AC2B53723A00FBDBF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A8615AF2B53723A00FBDBF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A8615B12B53723A00FBDBF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A8615B22B53723A00FBDBF0 /* Indie Wiki Buddy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Indie Wiki Buddy.entitlements"; sourceTree = "<group>"; };
+		4A8615B72B53723B00FBDBF0 /* Indie Wiki Buddy Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Indie Wiki Buddy Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A8615BC2B53723B00FBDBF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A8615C12B53723B00FBDBF0 /* Indie Wiki Buddy Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Indie Wiki Buddy Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A8615C62B53723B00FBDBF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A8615C72B53723B00FBDBF0 /* Indie Wiki Buddy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Indie Wiki Buddy.entitlements"; sourceTree = "<group>"; };
+		4A8615E72B53723B00FBDBF0 /* manifest-firefox.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "manifest-firefox.json"; path = "../../manifest-firefox.json"; sourceTree = "<group>"; };
+		4A8615E82B53723B00FBDBF0 /* favicons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = favicons; path = ../../favicons; sourceTree = "<group>"; };
+		4A8615E92B53723B00FBDBF0 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
+		4A8615EA2B53723B00FBDBF0 /* background.js */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../background.js; sourceTree = "<group>"; tabWidth = 4; };
+		4A8615EB2B53723B00FBDBF0 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = ../../images; sourceTree = "<group>"; };
+		4A8615EC2B53723B00FBDBF0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		4A8615EE2B53723B00FBDBF0 /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = scripts; path = ../../scripts; sourceTree = "<group>"; };
+		4A8615EF2B53723B00FBDBF0 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../manifest.json; sourceTree = "<group>"; };
+		4A8615F12B53723B00FBDBF0 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = ../../data; sourceTree = "<group>"; };
+		4A8615F22B53723B00FBDBF0 /* pages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pages; path = ../../pages; sourceTree = "<group>"; };
+		4AA823012BF41E4300A8D48C /* css */ = {isa = PBXFileReference; lastKnownFileType = folder; name = css; path = ../../css; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A8615952B53723A00FBDBF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A8615A72B53723A00FBDBF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A8615B42B53723B00FBDBF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A8615BE2B53723B00FBDBF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A8615842B53723900FBDBF0 = {
+			isa = PBXGroup;
+			children = (
+				4A8615892B53723A00FBDBF0 /* Shared (App) */,
+				4A8615922B53723A00FBDBF0 /* Shared (Extension) */,
+				4A86159A2B53723A00FBDBF0 /* iOS (App) */,
+				4A8615AB2B53723A00FBDBF0 /* macOS (App) */,
+				4A8615BB2B53723B00FBDBF0 /* iOS (Extension) */,
+				4A8615C52B53723B00FBDBF0 /* macOS (Extension) */,
+				4A8615992B53723A00FBDBF0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A8615892B53723A00FBDBF0 /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				4A8615902B53723A00FBDBF0 /* ViewController.swift */,
+				4A8615912B53723A00FBDBF0 /* Assets.xcassets */,
+				4A86158A2B53723A00FBDBF0 /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		4A86158A2B53723A00FBDBF0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4A86158B2B53723A00FBDBF0 /* Main.html */,
+				4A86158D2B53723A00FBDBF0 /* Icon.png */,
+				4A86158E2B53723A00FBDBF0 /* Style.css */,
+				4A86158F2B53723A00FBDBF0 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4A8615922B53723A00FBDBF0 /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				4A8615E62B53723B00FBDBF0 /* Resources */,
+				4A8615932B53723A00FBDBF0 /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		4A8615992B53723A00FBDBF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A8615982B53723A00FBDBF0 /* Indie Wiki Buddy.app */,
+				4A8615AA2B53723A00FBDBF0 /* Indie Wiki Buddy.app */,
+				4A8615B72B53723B00FBDBF0 /* Indie Wiki Buddy Extension.appex */,
+				4A8615C12B53723B00FBDBF0 /* Indie Wiki Buddy Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A86159A2B53723A00FBDBF0 /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				4A86159B2B53723A00FBDBF0 /* AppDelegate.swift */,
+				4A86159D2B53723A00FBDBF0 /* SceneDelegate.swift */,
+				4A86159F2B53723A00FBDBF0 /* LaunchScreen.storyboard */,
+				4A8615A22B53723A00FBDBF0 /* Main.storyboard */,
+				4A8615A52B53723A00FBDBF0 /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		4A8615AB2B53723A00FBDBF0 /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				4A8615AC2B53723A00FBDBF0 /* AppDelegate.swift */,
+				4A8615AE2B53723A00FBDBF0 /* Main.storyboard */,
+				4A8615B12B53723A00FBDBF0 /* Info.plist */,
+				4A8615B22B53723A00FBDBF0 /* Indie Wiki Buddy.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		4A8615BB2B53723B00FBDBF0 /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				4A8615BC2B53723B00FBDBF0 /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		4A8615C52B53723B00FBDBF0 /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				4A8615C62B53723B00FBDBF0 /* Info.plist */,
+				4A8615C72B53723B00FBDBF0 /* Indie Wiki Buddy.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		4A8615E62B53723B00FBDBF0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4AA823012BF41E4300A8D48C /* css */,
+				4A8615E72B53723B00FBDBF0 /* manifest-firefox.json */,
+				4A8615E82B53723B00FBDBF0 /* favicons */,
+				4A8615E92B53723B00FBDBF0 /* LICENSE */,
+				4A8615EA2B53723B00FBDBF0 /* background.js */,
+				4A8615EB2B53723B00FBDBF0 /* images */,
+				4A8615EC2B53723B00FBDBF0 /* README.md */,
+				4A8615EE2B53723B00FBDBF0 /* scripts */,
+				4A8615EF2B53723B00FBDBF0 /* manifest.json */,
+				4A8615F12B53723B00FBDBF0 /* data */,
+				4A8615F22B53723B00FBDBF0 /* pages */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A8615972B53723A00FBDBF0 /* Indie Wiki Buddy (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A8615DC2B53723B00FBDBF0 /* Build configuration list for PBXNativeTarget "Indie Wiki Buddy (iOS)" */;
+			buildPhases = (
+				4A8615942B53723A00FBDBF0 /* Sources */,
+				4A8615952B53723A00FBDBF0 /* Frameworks */,
+				4A8615962B53723A00FBDBF0 /* Resources */,
+				4A8615DB2B53723B00FBDBF0 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A8615BA2B53723B00FBDBF0 /* PBXTargetDependency */,
+			);
+			name = "Indie Wiki Buddy (iOS)";
+			productName = "Indie Wiki Buddy (iOS)";
+			productReference = 4A8615982B53723A00FBDBF0 /* Indie Wiki Buddy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A8615A92B53723A00FBDBF0 /* Indie Wiki Buddy (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A8615E32B53723B00FBDBF0 /* Build configuration list for PBXNativeTarget "Indie Wiki Buddy (macOS)" */;
+			buildPhases = (
+				4A8615A62B53723A00FBDBF0 /* Sources */,
+				4A8615A72B53723A00FBDBF0 /* Frameworks */,
+				4A8615A82B53723A00FBDBF0 /* Resources */,
+				4A8615E22B53723B00FBDBF0 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A8615C42B53723B00FBDBF0 /* PBXTargetDependency */,
+			);
+			name = "Indie Wiki Buddy (macOS)";
+			productName = "Indie Wiki Buddy (macOS)";
+			productReference = 4A8615AA2B53723A00FBDBF0 /* Indie Wiki Buddy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A8615B62B53723B00FBDBF0 /* Indie Wiki Buddy Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A8615D82B53723B00FBDBF0 /* Build configuration list for PBXNativeTarget "Indie Wiki Buddy Extension (iOS)" */;
+			buildPhases = (
+				4A8615B32B53723B00FBDBF0 /* Sources */,
+				4A8615B42B53723B00FBDBF0 /* Frameworks */,
+				4A8615B52B53723B00FBDBF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Indie Wiki Buddy Extension (iOS)";
+			productName = "Indie Wiki Buddy Extension (iOS)";
+			productReference = 4A8615B72B53723B00FBDBF0 /* Indie Wiki Buddy Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		4A8615C02B53723B00FBDBF0 /* Indie Wiki Buddy Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A8615DF2B53723B00FBDBF0 /* Build configuration list for PBXNativeTarget "Indie Wiki Buddy Extension (macOS)" */;
+			buildPhases = (
+				4A8615BD2B53723B00FBDBF0 /* Sources */,
+				4A8615BE2B53723B00FBDBF0 /* Frameworks */,
+				4A8615BF2B53723B00FBDBF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Indie Wiki Buddy Extension (macOS)";
+			productName = "Indie Wiki Buddy Extension (macOS)";
+			productReference = 4A8615C12B53723B00FBDBF0 /* Indie Wiki Buddy Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A8615852B53723900FBDBF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					4A8615972B53723A00FBDBF0 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					4A8615A92B53723A00FBDBF0 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					4A8615B62B53723B00FBDBF0 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					4A8615C02B53723B00FBDBF0 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 4A8615882B53723900FBDBF0 /* Build configuration list for PBXProject "Indie Wiki Buddy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A8615842B53723900FBDBF0;
+			productRefGroup = 4A8615992B53723A00FBDBF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A8615972B53723A00FBDBF0 /* Indie Wiki Buddy (iOS) */,
+				4A8615A92B53723A00FBDBF0 /* Indie Wiki Buddy (macOS) */,
+				4A8615B62B53723B00FBDBF0 /* Indie Wiki Buddy Extension (iOS) */,
+				4A8615C02B53723B00FBDBF0 /* Indie Wiki Buddy Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A8615962B53723A00FBDBF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A8615CA2B53723B00FBDBF0 /* Icon.png in Resources */,
+				4A8615A12B53723A00FBDBF0 /* LaunchScreen.storyboard in Resources */,
+				4A8615C82B53723B00FBDBF0 /* Main.html in Resources */,
+				4A8615CE2B53723B00FBDBF0 /* Script.js in Resources */,
+				4A8615D22B53723B00FBDBF0 /* Assets.xcassets in Resources */,
+				4A8615A42B53723A00FBDBF0 /* Main.storyboard in Resources */,
+				4A8615CC2B53723B00FBDBF0 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A8615A82B53723A00FBDBF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A8615CB2B53723B00FBDBF0 /* Icon.png in Resources */,
+				4A8615CD2B53723B00FBDBF0 /* Style.css in Resources */,
+				4A8615B02B53723A00FBDBF0 /* Main.storyboard in Resources */,
+				4A8615CF2B53723B00FBDBF0 /* Script.js in Resources */,
+				4A8615D32B53723B00FBDBF0 /* Assets.xcassets in Resources */,
+				4A8615C92B53723B00FBDBF0 /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A8615B52B53723B00FBDBF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A8616042B53723B00FBDBF0 /* README.md in Resources */,
+				4A8616032B53723B00FBDBF0 /* images in Resources */,
+				4A8616092B53723B00FBDBF0 /* data in Resources */,
+				4A8616022B53723B00FBDBF0 /* background.js in Resources */,
+				4A8616072B53723B00FBDBF0 /* manifest.json in Resources */,
+				4A8616012B53723B00FBDBF0 /* LICENSE in Resources */,
+				4AA823022BF41E4300A8D48C /* css in Resources */,
+				4A8615FF2B53723B00FBDBF0 /* manifest-firefox.json in Resources */,
+				4A86160A2B53723B00FBDBF0 /* pages in Resources */,
+				4A8616002B53723B00FBDBF0 /* favicons in Resources */,
+				4A8616062B53723B00FBDBF0 /* scripts in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A8615BF2B53723B00FBDBF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A8615F82B53723B00FBDBF0 /* README.md in Resources */,
+				4A8615F72B53723B00FBDBF0 /* images in Resources */,
+				4A8615FD2B53723B00FBDBF0 /* data in Resources */,
+				4A8615F62B53723B00FBDBF0 /* background.js in Resources */,
+				4A8615FB2B53723B00FBDBF0 /* manifest.json in Resources */,
+				4A8615F52B53723B00FBDBF0 /* LICENSE in Resources */,
+				4AA823032BF41E4300A8D48C /* css in Resources */,
+				4A8615F32B53723B00FBDBF0 /* manifest-firefox.json in Resources */,
+				4A8615FE2B53723B00FBDBF0 /* pages in Resources */,
+				4A8615F42B53723B00FBDBF0 /* favicons in Resources */,
+				4A8615FA2B53723B00FBDBF0 /* scripts in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A8615942B53723A00FBDBF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A8615D02B53723B00FBDBF0 /* ViewController.swift in Sources */,
+				4A86159C2B53723A00FBDBF0 /* AppDelegate.swift in Sources */,
+				4A86159E2B53723A00FBDBF0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A8615A62B53723A00FBDBF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A8615D12B53723B00FBDBF0 /* ViewController.swift in Sources */,
+				4A8615AD2B53723A00FBDBF0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A8615B32B53723B00FBDBF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A8615D42B53723B00FBDBF0 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A8615BD2B53723B00FBDBF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A8615D52B53723B00FBDBF0 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A8615BA2B53723B00FBDBF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A8615B62B53723B00FBDBF0 /* Indie Wiki Buddy Extension (iOS) */;
+			targetProxy = 4A8615B92B53723B00FBDBF0 /* PBXContainerItemProxy */;
+		};
+		4A8615C42B53723B00FBDBF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A8615C02B53723B00FBDBF0 /* Indie Wiki Buddy Extension (macOS) */;
+			targetProxy = 4A8615C32B53723B00FBDBF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4A86158B2B53723A00FBDBF0 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A86158C2B53723A00FBDBF0 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		4A86159F2B53723A00FBDBF0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A8615A02B53723A00FBDBF0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4A8615A22B53723A00FBDBF0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A8615A32B53723A00FBDBF0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4A8615AE2B53723A00FBDBF0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A8615AF2B53723A00FBDBF0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A8615D62B53723B00FBDBF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4A8615D72B53723B00FBDBF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		4A8615D92B53723B00FBDBF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39SZK2C73D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Indie Wiki Buddy Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.indie-wiki-buddy.Indie-Wiki-Buddy.Extension";
+				PRODUCT_NAME = "Indie Wiki Buddy Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A8615DA2B53723B00FBDBF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39SZK2C73D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Indie Wiki Buddy Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.indie-wiki-buddy.Indie-Wiki-Buddy.Extension";
+				PRODUCT_NAME = "Indie Wiki Buddy Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A8615DD2B53723B00FBDBF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39SZK2C73D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Indie Wiki Buddy";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.indie-wiki-buddy.Indie-Wiki-Buddy";
+				PRODUCT_NAME = "Indie Wiki Buddy";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A8615DE2B53723B00FBDBF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39SZK2C73D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Indie Wiki Buddy";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.indie-wiki-buddy.Indie-Wiki-Buddy";
+				PRODUCT_NAME = "Indie Wiki Buddy";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A8615E02B53723B00FBDBF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Indie Wiki Buddy.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39SZK2C73D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Indie Wiki Buddy Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.indie-wiki-buddy.Indie-Wiki-Buddy.Extension";
+				PRODUCT_NAME = "Indie Wiki Buddy Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4A8615E12B53723B00FBDBF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Indie Wiki Buddy.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39SZK2C73D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Indie Wiki Buddy Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.indie-wiki-buddy.Indie-Wiki-Buddy.Extension";
+				PRODUCT_NAME = "Indie Wiki Buddy Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4A8615E42B53723B00FBDBF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Indie Wiki Buddy.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39SZK2C73D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Indie Wiki Buddy";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.indie-wiki-buddy.Indie-Wiki-Buddy";
+				PRODUCT_NAME = "Indie Wiki Buddy";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4A8615E52B53723B00FBDBF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Indie Wiki Buddy.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39SZK2C73D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Indie Wiki Buddy";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.indie-wiki-buddy.Indie-Wiki-Buddy";
+				PRODUCT_NAME = "Indie Wiki Buddy";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A8615882B53723900FBDBF0 /* Build configuration list for PBXProject "Indie Wiki Buddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A8615D62B53723B00FBDBF0 /* Debug */,
+				4A8615D72B53723B00FBDBF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A8615D82B53723B00FBDBF0 /* Build configuration list for PBXNativeTarget "Indie Wiki Buddy Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A8615D92B53723B00FBDBF0 /* Debug */,
+				4A8615DA2B53723B00FBDBF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A8615DC2B53723B00FBDBF0 /* Build configuration list for PBXNativeTarget "Indie Wiki Buddy (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A8615DD2B53723B00FBDBF0 /* Debug */,
+				4A8615DE2B53723B00FBDBF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A8615DF2B53723B00FBDBF0 /* Build configuration list for PBXNativeTarget "Indie Wiki Buddy Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A8615E02B53723B00FBDBF0 /* Debug */,
+				4A8615E12B53723B00FBDBF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A8615E32B53723B00FBDBF0 /* Build configuration list for PBXNativeTarget "Indie Wiki Buddy (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A8615E42B53723B00FBDBF0 /* Debug */,
+				4A8615E52B53723B00FBDBF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A8615852B53723900FBDBF0 /* Project object */;
+}

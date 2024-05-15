@@ -1,6 +1,9 @@
 if (typeof importScripts !== 'undefined') {
   importScripts('scripts/common-functions.js');
 }
+function isSafari() {
+	return navigator.userAgent.indexOf("Safari") != -1;
+}
 
 let cachedStorage = {};
 
@@ -41,19 +44,26 @@ async function getCachedStorage() {
 updateCachedStorage();
 
 // Capture web requests
-extensionAPI.webRequest.onBeforeSendHeaders.addListener(
-  async (event) => {
-    if (event.documentLifecycle !== 'prerender') {
-      if (event.frameType === 'sub_frame') {
-        let tabInfo = await extensionAPI.tabs.get(event.tabId);
-        main(tabInfo.url, event.tabId);
-      } else {
-        main(event.url, event.tabId);
-      }
-    }
-  },
-  { urls: ['*://*.fandom.com/*', '*://*.wiki.fextralife.com/*', '*://*.neoseeker.com/wiki/*'], types: ['main_frame', 'sub_frame'] }
-);
+if (!isSafari()) {
+  extensionAPI.webRequest.onBeforeSendHeaders.addListener(
+		  async (event) => {
+			if (event.documentLifecycle !== 'prerender') {
+			  if (event.frameType === 'sub_frame') {
+				let tabInfo = await extensionAPI.tabs.get(event.tabId);
+				main(tabInfo.url, event.tabId);
+			  } else {
+				main(event.url, event.tabId);
+			  }
+			}
+		  },
+		  { urls: ['*://*.fandom.com/*', '*://*.wiki.fextralife.com/*', '*://*.neoseeker.com/wiki/*'], types: ['main_frame', 'sub_frame'] }
+		  );
+} else {
+  function onTabUpdated(_tabId, _changeInfo, tab) {
+	main(tab.url, tab.id);
+  }
+  chrome.tabs.onUpdated.addListener(onTabUpdated);
+}
 
 // Listen for user turning extension on or off, to update icon
 extensionAPI.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
@@ -99,9 +109,11 @@ extensionAPI.runtime.onInstalled.addListener(async (detail) => {
     }
   });
 
-  // Temporary functions for 3.0 migration
-  if (detail.reason === 'update') {
-    commonFunctionMigrateToV3();
+  if (!isSafari) {
+	// Temporary functions for 3.0 migration
+	if (detail.reason === 'update') {
+	  commonFunctionMigrateToV3();
+	}
   }
 });
 
@@ -140,7 +152,7 @@ function redirectToBreezeWiki(storage, tabId, url) {
     // Increase BreezeWiki stat count
     extensionAPI.storage.sync.set({ 'countBreezeWiki': (storage.countBreezeWiki ?? 0) + 1 });
 
-    if ((storage.notifications ?? 'on') === 'on') {
+    if (!isSafari && (storage.notifications ?? 'on') === 'on') {
       // Notify that user is being redirected to BreezeWiki
       let notifID = 'independent-wiki-redirector-notification-' + Math.floor(Math.random() * 1E16);
       extensionAPI.notifications.create(notifID, {
@@ -222,7 +234,7 @@ async function main(url, tabId) {
         extensionAPI.storage.sync.set({ 'countRedirects': (storage.countRedirects ?? 0) + 1 });
 
         // Notify if enabled
-        if ((storage.notifications ?? 'on') === 'on') {
+        if (!isSafari && (storage.notifications ?? 'on') === 'on') {
           // Notify that user is being redirected
           let notifID = 'independent-wiki-redirector-notification-' + Math.floor(Math.random() * 1E16);
           extensionAPI.notifications.create(notifID, {

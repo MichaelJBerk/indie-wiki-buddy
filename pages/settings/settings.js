@@ -340,6 +340,7 @@ async function loadOptions(lang, textFilter = '') {
           toggles[i].checked = true;
           wikiSettings[toggles[i].getAttribute('data-wiki-key')] = 'disabled';
         }
+		console.log(wikiSettings)
         extensionAPI.storage.sync.set({ 'wikiSettings': await commonFunctionCompressJSON(wikiSettings) });
       });
 
